@@ -3,7 +3,8 @@ import Image from "next/image";
 export function Profile() {
     return (
         <div className="flex justify-center mt-50">
-            <div className="relative w-120 h-120 rounded-full overflow-hidden">
+            <div className="relative w-120 h-120 rounded-full overflow-hidden
+                shadow-[0_20px_50px_-15px_rgba(0,0,0,1)]">
                 <Image
                 src="/profile.jpg"
                 alt="Profile picture"
