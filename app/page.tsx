@@ -3,6 +3,7 @@ import { Header } from "./components/header";
 import { Profile } from "./components/profile";
 
 export default function Home() {
+  
   return (
     <div className="bg-background-2 text-foreground-2">
       <div className="bg-background text-foreground min-h-screen z-10 fixed w-full">
@@ -11,7 +12,7 @@ export default function Home() {
         <Glitch />
       </div>
       <div className="hidden">
-        <div id="about" className="p-20 z-0 ">
+        <div id="about" className="p-20 z-100 ">
           <h2 className="text-5xl font-bold mb-6">A Propos</h2>
           <p className="text-2xl leading-relaxed border rounded-lg p-6">
             Bonjour! Je m'appelle Loïc DELPRAT, un étudiant passionné en deuxième année d'informatique.

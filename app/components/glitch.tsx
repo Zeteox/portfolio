@@ -39,15 +39,12 @@ export function Glitch() {
     };
 
     generateBars();
-
-    window.addEventListener("resize", generateBars);
-    return () => window.removeEventListener("resize", generateBars);
   }, []);
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-66 overflow-hidden z-20"
+      className="relative w-full overflow-hidden z-20"
     >
       {bars.map((bar, i) => (
         <span
