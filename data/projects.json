@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "title": "Portfolio",
+            "contexte": "Personnel",
+            "type": "Website",
+            "date": "12-2025",
+            "description": "Mon portfolio personnel présentant mes compétences, projets et expériences.",
+            "techno": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+            "link": "https://github.com/Zeteox/portfolio/"
+        },
+        {
+            "title": "Survivalist Python",
+            "contexte": "Académique",
+            "type": "Game",
+            "date": "9-2025",
+            "description": "Un jeu de survie en Python dans le CLI avec des fonctionnalités de gestion de ressources, mini jeux et sauvegarde.",
+            "techno": ["Python"],
+            "link": "https://github.com/Zeteox/Survivalist-Python"
+        }
+    ]
+}

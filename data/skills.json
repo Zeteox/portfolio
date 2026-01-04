@@ -1,0 +1,19 @@
+{
+    "languages": [
+        "JavaScript",
+        "Python",
+        "C++",
+        "Java",
+        "Go",
+        "HTML",
+        "CSS"
+    ],
+    "frameworks": [
+        "Express.js",
+        "Tailwind CSS"
+    ],
+    "tools": [
+        "Git",
+        "Postman"
+    ]
+}
