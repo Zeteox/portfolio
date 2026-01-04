@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Profile() {
     return (
-        <div className="flex flex-col xl:flex-row items-center justify-center pt-20 sm:pt-28 md:pt-36 lg:pt-34">
+        <div className="flex flex-col xl:flex-row items-center justify-center pt-0 sm:pt-25 md:pt-20 lg:pt-34">
             <div className="relative w-70 h-70 md:w-110 md:h-110 lg:w-120 lg:h-120 rounded-full overflow-hidden
                 shadow-[0_20px_50px_-15px_rgba(0,0,0,1)]">
                 <Image
