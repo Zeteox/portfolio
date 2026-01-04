@@ -1,3 +1,104 @@
+"use client";
+
+import { useState } from 'react';
+import Image from "next/image";
+
 export function Path() {
-    return <div>Parcour</div>;
+    const [selectedPath, setSelectedPath] = useState<string | null>(null);
+
+    return (
+        <div>
+            <h2 className="text-5xl font-bold mb-6">Parcours</h2>
+            <p className="text-2xl leading-relaxed border-purple-400 border rounded-lg p-6 shadow-gray-950 shadow-xl">
+                Voici un aperçu de mon parcours dans le domaine de l'informatique.
+            </p>
+            <div className="mt-10 flex flex-col gap-6">
+                <div className="border border-purple-400 rounded-lg p-6 shadow-gray-950 shadow-xl relative">
+                    <div className="absolute ml-4 top-6 bottom-6 w-1 bg-purple-50 rounded-full" />
+
+                    <div className="relative pl-12 mt-2">
+                        <div className="absolute -ml-10 w-5 h-5 bg-purple-400 border border-purple-700 rounded-full shrink-0" />
+                        <div
+                            onClick={() => setSelectedPath(selectedPath === 'ynov' ? null : 'ynov')}
+                            className="border-purple-400 w-1/3 border rounded-lg p-6 shadow-gray-950 shadow-lg hover:shadow-purple-100 hover:border-purple-700 hover:shadow-md transition-shadow duration-500 cursor-pointer"
+                        >
+                            <p className="text-lg font-semibold">2024 - Présent : Étudiant</p>
+                            <p className="mt-2 text-gray-300">
+                                Étudiant en deuxième année de Bachelor Informatique à YNOV sur le campus de Toulouse.
+                            </p>
+                            <div className="absolute -mt-22 ml-99">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    {selectedPath === 'ynov' && (
+                            <div className="absolute -mt-30 ml-148 w-6/11 border border-purple-500 rounded-lg p-6 z-10">
+                                <h3 className="text-xl font-semibold text-purple-300 mb-3">Détails supplémentaires</h3>
+                                 <div className='absolute w-15 aspect-square bottom-4 right-10'>
+                                    <Image
+                                        src="/ynov.jpg"
+                                        alt="Ynov logo"
+                                        fill
+                                        className='object-contain'
+                                    />
+                                </div>
+                                <p className="text-gray-300">
+                                    <b>Ynov</b> est une école d'informatique reconnue qui offre une formation axée sur les technologies modernes et les compétences pratiques.
+                                    Son programme de Bachelor en Informatique couvre divers technologies et méthodologies, préparant les étudiants à leur future carrière dans le secteur informatique.
+                                    Nous y apprenons des langages de programmation, le développement web, la gestion de bases de données, et bien plus encore.
+                                </p>
+                                <a href="https://www.ynov.com/" target="_blank" className="text-purple-400 hover:underline flex gap-2 items-center mt-4">
+                                    Ynov Campus
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                                </a>
+                            </div>
+                        )}
+
+                    <div className="relative pl-12 mt-6">
+                        <div className="absolute -ml-10 w-5 h-5 bg-purple-400 border border-purple-700 rounded-full shrink-0" />
+                        <div
+                            onClick={() => setSelectedPath(selectedPath === 'bac' ? null : 'bac')}
+                            className="border-purple-400 w-1/3 border rounded-lg p-6 shadow-gray-950 shadow-lg hover:shadow-purple-100 hover:border-purple-700 hover:shadow-md transition-shadow duration-500 cursor-pointer"
+                        >
+                            <p className="text-lg font-semibold">2024 : BAC général</p>
+                            <p className="mt-2 text-gray-300">
+                                Obtention du BAC série générale au lycée Borde Basse avec pour spécialités:
+                            </p>
+                            <ul className="mt-1 text-gray-300 list-disc list-inside ml-4">
+                                <li>Mathématiques</li>
+                                <li>NSI (Numérique et Science de l'Informatique)</li>
+                            </ul>
+                            <div className="absolute -mt-35 ml-99">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    {selectedPath === 'bac' && (
+                            <div className="absolute -mt-83 ml-148 w-6/11 border border-purple-500 rounded-lg p-6 z-10">
+                                <h3 className="text-xl font-semibold text-purple-300 mb-3">Détails supplémentaires</h3>
+                                 <div className='absolute w-15 aspect-square bottom-4 right-10'>
+                                    <Image
+                                        src="/bb.jpg"
+                                        alt="Borde Basse logo"
+                                        fill
+                                        className='object-contain'
+                                    />
+                                </div>
+                                <p className="text-gray-300">
+                                    Le lycée <b>Borde Basse</b> est un lycée situé à Castres qui offre un enseignement général, technologique et professionnel.
+                                    Dans ce lycée, j'ai pu approfondir mes connaissances en informatique grâce à la spécialité NSI où j'ai appris le langage Python ainsi que la logique de programmation.
+                                    De plus j'y ai aussi vu du SQL, de l'algorithmie, des bases en développement web, d'assembly, de binaire, et de réseaux qui m'ont servi pour la suite de mes études.
+                                </p>
+                                <a href="https://borde-basse.mon-ent-occitanie.fr/" target="_blank" className="text-purple-400 hover:underline flex gap-2 items-center mt-4">
+                                    Lycée Borde Basse
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                                </a>
+                            </div>
+                        )}
+                </div>
+            </div>
+        </div>
+    );
 }
