@@ -19,16 +19,16 @@ export function Projects() {
 
     return (
         <div>
-            <h2 className="text-5xl font-bold mb-6">Projets</h2>
-            <p className="text-2xl leading-relaxed border-purple-400 border rounded-lg p-6 shadow-gray-950 shadow-xl">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Projets</h2>
+            <p className="text-sm sm:text-lg md:text-2xl leading-relaxed border-purple-400 border rounded-lg p-2 pl-3 sm:p-4 md:p-6 shadow-gray-950 shadow-xl">
                 Voici quelques-uns de mes projets récents où j'ai appliqué mes compétences en développement web et en programmation.
             </p>
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-10">
                 {projects.map((project, i) => (
-                    <div key={i} className="border border-purple-400 rounded-lg p-6 shadow-gray-950 shadow-xl flex flex-col">
-                        <h3 className="text-3xl font-semibold mb-4 text-center">{project.title}</h3>
+                    <div key={i} className="border border-purple-400 rounded-lg p-3 sm:p-6 shadow-gray-950 shadow-xl flex flex-col">
+                        <h3 className="text-2xl sm:text-3xl font-semibold mb-1 sm:mb-4 text-center">{project.title}</h3>
                         <p className="text-sm italic mb-1 text-purple-400">Projet {project.contexte} - {project.type}</p>
-                        <p className="text-xl mb-4">
+                        <p className="text-md sm:text-lg md:text-xl mb-4">
                             {project.description}
                         </p>
                         <p className="text-sm italic mb-4 flex items-center gap-1 ">
@@ -46,7 +46,7 @@ export function Projects() {
                     </div>
                 ))}
             </div>
-            <div className="mt-10 flex justify-center">
+            <div className="mt-10 flex justify-center hidden">
                 <a href="/projects" className={`border-2 rounded-xl p-2 border-purple-400 shadow-gray-950 shadow-lg hover:border-purple-300 hover:animate-pulse`}>Voir tout</a>
             </div>
         </div>
