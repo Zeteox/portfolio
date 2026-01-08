@@ -3,7 +3,7 @@
         {
             "title": "Portfolio",
             "contexte": "Personnel",
-            "type": "Website",
+            "type": "Site Web",
             "date": "12-2025",
             "description": "Mon portfolio personnel présentant mes compétences, projets et expériences.",
             "techno": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
@@ -12,11 +12,29 @@
         {
             "title": "Survivalist Python",
             "contexte": "Académique",
-            "type": "Game",
+            "type": "Jeux",
             "date": "9-2025",
             "description": "Un jeu de survie en Python dans le CLI avec des fonctionnalités de gestion de ressources, mini jeux et sauvegarde.",
             "techno": ["Python"],
             "link": "https://github.com/Zeteox/Survivalist-Python"
+        },
+        {
+            "title": "Asteria Game",
+            "contexte": "Académique",
+            "type": "Jeux",
+            "date": "10-2024",
+            "description": "Une jeu d'aventure en C++ avec un système de dongeon et des combats au tour par tour",
+            "techno": ["C++", "QtCreator"],
+            "link": "https://github.com/Zeteox/AsteriaGame"
+        },
+        {
+            "title": "TaskIt",
+            "contexte": "Personnel",
+            "type": "Jeux",
+            "date": "03-2025",
+            "description": "Un mod pour le jeu Minecraft ajoutant un système de gestion de tâches pour améliorer l'expérience de jeu.",
+            "techno": ["Java", "Minecraft Fabric"],
+            "link": "https://github.com/Zeteox/TaskIt"
         }
     ]
 }

@@ -6,7 +6,8 @@
         "Java",
         "Go",
         "HTML",
-        "CSS"
+        "CSS",
+        "SQL"
     ],
     "frameworks": [
         "Express.js",
@@ -15,5 +16,9 @@
     "tools": [
         "Git",
         "Postman"
+    ],
+    "os": [
+        "Windows",
+        "Linux"
     ]
 }
