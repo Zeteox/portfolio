@@ -77,6 +77,16 @@ export function Path() {
                         )}
                 </div>
             </div>
+            <div className="hidden xl:flex items-center justify-center absolute left-4/9 right-0 top-1/3 bottom-1/9">
+                <div className="border border-purple-400/40 rounded-lg p-6 font-mono text-purple-300/80 text-sm">
+                    <p className="text-purple-400">// academic path</p>
+                    <p>class Student {'{'}</p>
+                    <p className="ml-4">degree: "Bachelor 2",</p>
+                    <p className="ml-4">school: "YNOV",</p>
+                    <p className="ml-4">focus: ["OOP", "Software", "Systems"]</p>
+                    <p>{'}'}</p>
+                </div>
+            </div>
         </div>
     );
 }
