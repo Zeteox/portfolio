@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "DELPRAT Loïc - Portfolio",
-  description: "Created to present myseklf and my work.",
+  description: "Un portfolio crée pour me correspondre et me présenter moi et mes projets.",
 };
 
 export default function RootLayout({
