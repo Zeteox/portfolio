@@ -19,17 +19,15 @@ export function Profile() {
             </div>
 
             <div className="relative ml-5 mt-15 lg:ml-24">
-                <span className="absolute -top-5 -left-5 md:-top-5 md:-left-9 w-40 h-2 md:w-60 md:h-3 bg-gray-500" />
-                <span className="absolute -top-5 -left-5 md:-top-5 md:-left-9 w-2 h-20 md:w-3 md:h-30 bg-gray-500" />
+                <span className="absolute -top-5 -left-5 md:-top-5 md:-left-9 w-40 h-2 md:w-60 md:h-3 bg-gray-500" aria-hidden="true" />
+                <span className="absolute -top-5 -left-5 md:-top-5 md:-left-9 w-2 h-20 md:w-3 md:h-30 bg-gray-500" aria-hidden="true" />
 
-                <span className="absolute -top-5 right-10 md:-top-5 md:right-20 w-6 h-2 md:w-12 md:h-3 bg-gray-500" />
+                <span className="absolute -top-5 right-10 md:-top-5 md:right-20 w-6 h-2 md:w-12 md:h-3 bg-gray-500" aria-hidden="true" />
 
-                <span className="absolute bottom-21 -right-5 md:bottom-34 md:-right-10 w-2 h-20 md:w-3 md:h-30 bg-gray-500" />
-                <span className="absolute bottom-20 -right-5 md:bottom-34 md:-right-10 w-40 h-2 md:w-60 md:h-3 bg-gray-500" />
+                <span className="absolute bottom-21 -right-5 md:bottom-34 md:-right-10 w-2 h-20 md:w-3 md:h-30 bg-gray-500" aria-hidden="true" />
+                <span className="absolute bottom-20 -right-5 md:bottom-34 md:-right-10 w-40 h-2 md:w-60 md:h-3 bg-gray-500" aria-hidden="true" />
 
-                <span className="absolute bottom-20 left-10 md:bottom-34 md:left-23 w-6 h-2 md:w-12 md:h-3 bg-gray-500" />
-
-
+                <span className="absolute bottom-20 left-10 md:bottom-34 md:left-23 w-6 h-2 md:w-12 md:h-3 bg-gray-500" aria-hidden="true" />
                 <div className="relative flex flex-col items-center">
 
                     <h1 className="text-5xl md:text-8xl font-bold mb-2 leading-tight">
@@ -41,12 +39,12 @@ export function Profile() {
                         Étudiant en B2 informatique
                     </p>
 
-                    <div className="flex gap-2 md:gap-5 mt-2 md:mt-8 justify-center lg:justify-start">
+                    <div className="flex gap-2 md:gap-5 mt-2 md:mt-8 justify-center lg:justify-start" >
                         <a
                             href="https://www.linkedin.com/in/loïc-delprat/"
                             target="_blank"
                             className="flex items-center focus:outline-purple-400 gap-1 md:gap-2 md:text-xl px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 hover:border-purple-700">
-                            <Linkedin />
+                            <Linkedin aria-hidden="true" />
                             LinkedIn
                         </a>
 
@@ -54,15 +52,15 @@ export function Profile() {
                             href="https://github.com/Zeteox"
                             target="_blank"
                             className="flex items-center focus:outline-purple-400 gap-1 md:gap-2 md:text-xl px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 hover:border-purple-700">
-                            <Github />
+                            <Github aria-hidden="true" />
                             GitHub
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div className="absolute bottom-3 animate-pulse">
-                <ArrowBigDownDash />
+            <div className="absolute bottom-3 animate-pulse" aria-label="Scroll down for more content">
+                <ArrowBigDownDash aria-hidden="true" />
             </div>
         </div>
     );

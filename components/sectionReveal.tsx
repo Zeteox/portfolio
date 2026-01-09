@@ -6,9 +6,10 @@ interface SectionRevealProps {
   children: ReactNode;
   delay?: number;
   id?: string;
+  headingId?: string;
 }
 
-export function SectionReveal({ children, delay = 0, id }: SectionRevealProps) {
+export function SectionReveal({ children, delay = 0, id, headingId }: SectionRevealProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -36,6 +37,7 @@ export function SectionReveal({ children, delay = 0, id }: SectionRevealProps) {
       className={`p-5 sm:p-10 md:p-15 lg:p-20 pb-0 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       style={{ transitionDelay: `${delay}ms` }}
+      aria-labelledby={headingId}
     >
       {children}
     </section>

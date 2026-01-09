@@ -1,12 +1,12 @@
 import { About } from "@/components/about";
-import { Contact } from "../components/contact";
-import { Footer } from "../components/footer";
-import { Path } from "../components/path";
-import { Profile } from "../components/profile";
-import { Projects } from "../components/projects";
-import { SectionReveal } from "../components/sectionReveal";
-import { Skills } from "../components/skills";
-import { ScrollToTopOnFocus } from "../components/scrollToTopFocus";
+import { Contact } from "@/components/contact";
+import { Footer } from "@/components/footer";
+import { Path } from "@/components/path";
+import { Profile } from "@/components/profile";
+import { Projects } from "@/components/projects";
+import { SectionReveal } from "@/components/sectionReveal";
+import { Skills } from "@/components/skills";
+import { ScrollToTopOnFocus } from "@/components/scrollToTopFocus";
 
 export default function Home() {
   return (
@@ -16,30 +16,30 @@ export default function Home() {
         <Profile />
       </div>
       <div className="mt-[100vh] relative z-50">
-        <div className="min-h-screen bg-gradient-to-b from-transparent to-background-2"></div>
+        <div className="min-h-screen bg-gradient-to-b from-transparent to-background-2" aria-hidden="true" />
       </div>
       <div className="relative z-50 bg-background-2 text-foreground-2 min-h-screen">
-        <SectionReveal id="about" delay={0}>
+        <SectionReveal id="about" delay={0} headingId="about-heading" >
           <About />
         </SectionReveal>
 
-        <SectionReveal delay={200}>
+        <SectionReveal delay={200} headingId="path-heading" >
           <Path />
         </SectionReveal>
 
-        <SectionReveal delay={400}>
+        <SectionReveal delay={400} headingId="skills-heading" >
           <Skills />
         </SectionReveal>
 
-        <SectionReveal id="projects" delay={700}>
+        <SectionReveal id="projects" delay={700} headingId="projects-heading" >
           <Projects />
         </SectionReveal>
 
-        <SectionReveal id="contact" delay={900}>
+        <SectionReveal id="contact" delay={900} headingId="contact-heading" >
           <Contact />
         </SectionReveal>
 
-        <SectionReveal delay={1100}>
+        <SectionReveal delay={1100} >
           <Footer />
         </SectionReveal>
       </div>
