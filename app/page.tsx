@@ -6,11 +6,13 @@ import { Profile } from "../components/profile";
 import { Projects } from "../components/projects";
 import { SectionReveal } from "../components/sectionReveal";
 import { Skills } from "../components/skills";
+import { ScrollToTopOnFocus } from "../components/scrollToTopFocus";
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <div className="bg-background text-foreground min-h-screen fixed top-0 left-0 w-full z-40">
+        <ScrollToTopOnFocus />
         <Profile />
       </div>
       <div className="mt-[100vh] relative z-50">
