@@ -31,14 +31,13 @@ export function SectionReveal({ children, delay = 0, id }: SectionRevealProps) {
   }, [isVisible]);
 
   return (
-    <div
+    <section
       id={id}
-      className={`p-5 sm:p-10 md:p-15 lg:p-20 pb-0 transition-all duration-1000 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`p-5 sm:p-10 md:p-15 lg:p-20 pb-0 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
-    </div>
+    </section>
   );
 }

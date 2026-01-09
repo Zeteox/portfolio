@@ -8,18 +8,18 @@ type OS = string[];
 
 export function Skills() {
     const filePath = path.join(process.cwd(), "data", "skills.json");
-        const languages: Languages = JSON.parse(
-            fs.readFileSync(filePath, "utf-8")
-        ).languages;
-        const frameworks: Frameworks = JSON.parse(
-            fs.readFileSync(filePath, "utf-8")
-        ).frameworks;
-        const tools: Tools = JSON.parse(
-            fs.readFileSync(filePath, "utf-8")
-        ).tools;
-        const os: OS = JSON.parse(
-            fs.readFileSync(filePath, "utf-8")
-        ).os;
+    const languages: Languages = JSON.parse(
+        fs.readFileSync(filePath, "utf-8")
+    ).languages;
+    const frameworks: Frameworks = JSON.parse(
+        fs.readFileSync(filePath, "utf-8")
+    ).frameworks;
+    const tools: Tools = JSON.parse(
+        fs.readFileSync(filePath, "utf-8")
+    ).tools;
+    const os: OS = JSON.parse(
+        fs.readFileSync(filePath, "utf-8")
+    ).os;
 
     return (
         <div>
