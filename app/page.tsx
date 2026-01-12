@@ -23,23 +23,23 @@ export default function Home() {
           <About />
         </SectionReveal>
 
-        <SectionReveal delay={200} headingId="path-heading" >
+        <SectionReveal delay={100} headingId="path-heading" >
           <Path />
         </SectionReveal>
 
-        <SectionReveal delay={400} headingId="skills-heading" >
+        <SectionReveal delay={200} headingId="skills-heading" >
           <Skills />
         </SectionReveal>
 
-        <SectionReveal id="projects" delay={700} headingId="projects-heading" >
+        <SectionReveal id="projects" delay={300} headingId="projects-heading" >
           <Projects />
         </SectionReveal>
 
-        <SectionReveal id="contact" delay={900} headingId="contact-heading" >
+        <SectionReveal id="contact" delay={400} headingId="contact-heading" >
           <Contact />
         </SectionReveal>
 
-        <SectionReveal delay={1100} >
+        <SectionReveal delay={500} >
           <Footer />
         </SectionReveal>
       </div>

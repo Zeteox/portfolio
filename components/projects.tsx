@@ -31,9 +31,6 @@ export function Projects() {
                     </div>
                 ))}
             </div>
-            <div className="mt-10 flex justify-center hidden" aria-hidden="true">
-                <a href="/projects" className={`border-2 rounded-xl p-2 border-purple-400 shadow-gray-950 shadow-lg hover:border-purple-300 hover:animate-pulse`}>Voir tout</a>
-            </div>
         </div>
     );
 }

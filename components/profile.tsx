@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Linkedin, Github, ArrowBigDownDash } from "lucide-react";
+import { Linkedin, Github, ArrowBigDownDash, FileUser } from "lucide-react";
 
 export function Profile() {
     return (
@@ -52,8 +52,18 @@ export function Profile() {
                             href="https://github.com/Zeteox"
                             target="_blank"
                             className="flex items-center focus:outline-purple-400 gap-1 md:gap-2 md:text-xl px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 hover:border-purple-700">
-                            <Github aria-hidden="true" />
-                            GitHub
+                                <Github aria-hidden="true" />
+                                GitHub
+                        </a>
+
+                        <a
+                            href="/CV_Loic_DELPRAT_2526.pdf"
+                            target="_blank"
+                            className="flex items-center focus:outline-purple-400 gap-1 md:gap-2 md:text-xl px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 hover:border-purple-700"
+                            aria-label="Télécharger mon CV"
+                            >
+                                <FileUser aria-hidden="true" />
+                                CV
                         </a>
                     </div>
                 </div>

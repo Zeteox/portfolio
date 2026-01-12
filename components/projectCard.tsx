@@ -12,7 +12,7 @@ type Project = {
 
 export function ProjectCard({ project }: { project: Project }) {
     return (
-        <article className="border border-purple-400 rounded-lg p-3 sm:p-6 shadow-gray-950 shadow-xl flex flex-col">
+        <div className="border border-purple-400 rounded-lg p-3 sm:p-6 shadow-gray-950 shadow-xl h-full flex flex-col">
             <div className="relative h-full">
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-1 sm:mb-4 text-center">{project.title}</h3>
                 <p className="text-sm italic mb-1 text-purple-400">Projet {project.contexte} - {project.type}</p>
@@ -37,6 +37,6 @@ export function ProjectCard({ project }: { project: Project }) {
             >
                 Voir le projet
             </a>
-        </article>
+        </div>
     );
 }
