@@ -69,8 +69,8 @@ export function Profile() {
                 </div>
             </div>
 
-            <div className="absolute bottom-3 animate-pulse" aria-label="Scroll down for more content">
-                <ArrowBigDownDash aria-hidden="true" />
+            <div className="absolute bottom-3 animate-pulse"  aria-hidden="true">
+                <ArrowBigDownDash />
             </div>
         </div>
     );
