@@ -19,10 +19,10 @@ export function Path() {
                     <div className="relative pl-12 mt-2">
                         <div className="absolute -ml-10 w-5 h-5 bg-purple-400 border border-purple-700 rounded-full shrink-0" aria-hidden="true" />
                         <div
+                            role='button'
                             onClick={() => setSelectedPath(selectedPath === 'ynov' ? null : 'ynov')}
                             className="border-purple-400 border rounded-lg p-3 sm:p-6 shadow-gray-950 shadow-lg hover:shadow-purple-100 hover:border-purple-700 hover:shadow-md transition-shadow duration-500 cursor-pointer"
                             aria-expanded={selectedPath === 'ynov'}
-                            aria-controls="ynov-details"
                         >
                             <p className="text-md sm:text-lg font-semibold">2024 - Présent : Bachelor Informatique</p>
                             <p className="text-sm sm:text-lg md:text-lg lg:text-md mt-2 text-gray-300">
@@ -50,10 +50,10 @@ export function Path() {
                     <div className="relative pl-12 mt-6">
                         <div className="absolute -ml-10 w-5 h-5 bg-purple-400 border border-purple-700 rounded-full shrink-0" aria-hidden="true" />
                         <div
+                            role='button'
                             onClick={() => setSelectedPath(selectedPath === 'bac' ? null : 'bac')}
                             className="border-purple-400 border rounded-lg p-3 sm:p-6 shadow-gray-950 shadow-lg hover:shadow-purple-100 hover:border-purple-700 hover:shadow-md transition-shadow duration-500 cursor-pointer"
                             aria-expanded={selectedPath === 'bac'}
-                            aria-controls="bac-details"
                         >
                             <p className="text-md sm:text-lg font-semibold">2024 : BAC général</p>
                             <p className="text-sm sm:text-lg md:text-lg lg:text-md mt-2 text-gray-300">

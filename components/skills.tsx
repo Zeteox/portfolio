@@ -23,7 +23,7 @@ export function Skills() {
             <div className="mt-10 flex flex-col lg:flex-row justify-center gap-4">
                 <div className="w-full text-center mb-4 border border-purple-400 rounded-lg p-4 shadow-gray-950 shadow-xl">
                     <h3 className="text-lg sm:text-xl lg:text-3xl font-semibold mb-2">Langages de Programmation</h3>
-                    <div className="flex flex-wrap m-10 mt-5 pt-5 gap-2 justify-center border-t border-purple-400" role="list">
+                    <div className="flex flex-wrap m-10 mt-5 pt-5 gap-2 justify-center border-t border-purple-400">
                         {languages.map((language, i) => (
                             <span key={i} className="text-sm md:text-lg bg-purple-400 text-foreground font-semibold rounded-full px-4 py-2">
                                 {language}
@@ -33,7 +33,7 @@ export function Skills() {
                 </div>
                 <div className="w-full text-center mb-4 border border-purple-400 rounded-lg p-4 shadow-gray-950 shadow-xl">
                     <h3 className="text-lg sm:text-xl lg:text-3xl font-semibold mb-2">Frameworks</h3>
-                    <div className="flex flex-wrap m-10 mt-5 pt-5 gap-2 justify-center border-t border-purple-400" role="list">
+                    <div className="flex flex-wrap m-10 mt-5 pt-5 gap-2 justify-center border-t border-purple-400">
                         {frameworks.map((framework, i) => (
                             <span key={i} className="text-sm md:text-lg bg-purple-400 text-foreground font-semibold rounded-full px-4 py-2">
                                 {framework}
@@ -43,7 +43,7 @@ export function Skills() {
                 </div>
                 <div className="w-full text-center mb-4 border border-purple-400 rounded-lg p-4 shadow-gray-950 shadow-xl">
                     <h3 className="text-lg sm:text-xl lg:text-3xl font-semibold mb-2">Outils</h3>
-                    <div className="flex flex-wrap m-10 mt-5 pt-5 gap-2 justify-center border-t border-purple-400" role="list">
+                    <div className="flex flex-wrap m-10 mt-5 pt-5 gap-2 justify-center border-t border-purple-400">
                         {tools.map((tool, i) => (
                             <span key={i} className="text-sm md:text-lg bg-purple-400 text-foreground font-semibold rounded-full px-4 py-2">
                                 {tool}
