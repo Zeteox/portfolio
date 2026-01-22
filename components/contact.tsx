@@ -20,6 +20,17 @@ export function Contact() {
     const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
 
+        if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+            setStatus('validation');
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            setStatus('validation');
+            return;
+        }
+
         try {
             const response = await fetch('https://formspree.io/f/xdaanokn', {
                 method: 'POST',
@@ -40,7 +51,6 @@ export function Contact() {
             setStatus('error');
         }
     };
-
     return (
         <div>
             <h2 id="contact-heading" className="text-3xl md:text-5xl font-bold mb-6">Contact</h2>
