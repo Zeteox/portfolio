@@ -7,13 +7,12 @@ export function Profile() {
             <div className="relative w-70 h-70 md:w-110 md:h-110 lg:w-100 lg:h-100 xl:w-120 xl:h-120 rounded-full overflow-hidden
                 shadow-[0_20px_50px_-15px_rgba(0,0,0,1)]">
                 <Image
-                    src="/profile.jpg"
+                    src="/profile.webp"
                     alt="Profile picture"
                     fill
                     className="object-cover"
                     style={{
-                        transform: "scale(1.5)",
-                        objectPosition: "50% 0%",
+                        transform: "scale(1.15)"
                     }}
                 />
             </div>
