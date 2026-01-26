@@ -12,8 +12,7 @@ export function Profile() {
                     fill
                     className="object-cover"
                     style={{
-                        transform: "scale(1.5)",
-                        objectPosition: "50% 0%",
+                        transform: "scale(1.15)"
                     }}
                 />
             </div>
